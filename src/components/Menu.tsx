@@ -1,13 +1,12 @@
 import { Carousel } from "react-bootstrap";
-const images: string[] = [
- "src/assets/img/menu/antipasti.jpg",
- "src/assets/img/menu/primi.jpg",
-"src/assets/img/menu/secondi.jpg",
-"src/assets/img/menu/pizze1.jpg",
-"src/assets/img/menu/pizze2.jpg",
-"src/assets/img/menu/pizze3.jpg",
-];
+import antipasti from "../assets/img/menu/antipasti.jpg";
+import primi from "../assets/img/menu/primi.jpg";
+import secondi from "../assets/img/menu/secondi.jpg";
+import pizze1 from "../assets/img/menu/pizze1.jpg";
+import pizze2 from "../assets/img/menu/pizze2.jpg";
+import pizze3 from "../assets/img/menu/pizze3.jpg";
 
+const images: string[] = [antipasti, primi, secondi, pizze1, pizze2, pizze3];
 
 const Menu = () => {
   return (

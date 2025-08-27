@@ -1,16 +1,17 @@
 import Carousel from "react-bootstrap/Carousel";
 import Marquee from "react-fast-marquee";
+import img1 from "../assets/img/custom/425879450_1441140876612255_4279876720431297903_n.jpeg";
+import img2 from "../assets/img/custom/spaghetti-con-vongole.jpg";
+import img3 from "../assets/img/custom/440114382_446279247905142_4486865179385448861_n.jpeg";
+import img4 from "../assets/img/custom/490111885_653863847573792_6760672300408343407_n.jpeg";
+import img5 from "../assets/img/custom/FB_IMG_1756059189941.jpg";
+import img6 from "../assets/img/custom/FB_IMG_1756059321956.jpg";
+import img7 from "../assets/img/custom/FB_IMG_1756059337112.jpg";
+import img8 from "../assets/img/custom/FB_IMG_1756059396781.jpg";
+import img9 from "../assets/img/custom/FB_IMG_1756059170350.jpg";
 
-const images: string[] = [
-  "src/assets/img/custom/425879450_1441140876612255_4279876720431297903_n.jpeg","src/assets/img/custom/spaghetti-con-vongole.jpg",
-  "src/assets/img/custom/440114382_446279247905142_4486865179385448861_n.jpeg",
-  "src/assets/img/custom/490111885_653863847573792_6760672300408343407_n.jpeg",
-  "src/assets/img/custom/FB_IMG_1756059189941.jpg",
-  "src/assets/img/custom/FB_IMG_1756059321956.jpg",
-  "src/assets/img/custom/FB_IMG_1756059337112.jpg",
-  "src/assets/img/custom/FB_IMG_1756059396781.jpg",
-  "src/assets/img/custom/FB_IMG_1756059170350.jpg",  
-];
+const images: string[] = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
+
 
 const CarouselPhoto = () => {
   return (

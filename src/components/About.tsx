@@ -1,4 +1,9 @@
 import { Container, Row, Col } from "react-bootstrap";
+import stf from "../assets/img/STF.png";
+import st from "../assets/img/ST.png";
+import duf from "../assets/img/DUF.png";
+import du from "../assets/img/DU.png";
+
 const About = () => {
   return (
     <>
@@ -45,24 +50,16 @@ const About = () => {
         </Row>
         <Row className=" d-flex justify-content-center align-items-center py-4">
           <Col xs={12} md={6} className="text-center mt-2">
-            <img
-              src="src/assets/img/STF.png"
-              alt="avatar"
-              style={{ width: "200px" }}
-            />
-            <div className="sign-cont">
-              <img src="src/assets/img/ST.png" alt="firma" />
-            </div>
+           <img src={stf} alt="avatar" style={{ width: "200px" }} />
+<div className="sign-cont">
+  <img src={st} alt="firma" />
+</div>
           </Col>
           <Col xs={12} md={6} className="text-center mt-2">
-            <img
-              src="src/assets/img/DUF.png"
-              alt="avatar"
-              style={{ width: "200px" }}
-            />
-            <div className="sign-cont">
-              <img src="src/assets/img/DU.png" alt="firma" />
-            </div>
+            <img src={duf} alt="avatar" style={{ width: "200px" }} />
+<div className="sign-cont">
+  <img src={du} alt="firma" />
+</div>
           </Col>
         </Row>
       </Container>

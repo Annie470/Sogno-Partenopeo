@@ -1,16 +1,15 @@
 import { Carousel, Button } from "react-bootstrap";
 import { FaTimes } from "react-icons/fa";
+import sl1 from "../assets/img/sala/sl1.jpg";
+import sl2 from "../assets/img/sala/sl2.jpg";
+import l3 from "../assets/img/sala/l3.jpg";
+import all2 from "../assets/img/sala/all2.jpg";
+
+const images: string[] = [sl1, sl2, l3, all2];
 
 type SalaProps = {
   onClose: () => void;
 };
-
-const images: string[] = [
-  "src/assets/img/sala/sl1.jpg",
-  "src/assets/img/sala/sl2.jpg",
-  "src/assets/img/sala/l3.jpg",
-  "src/assets/img/sala/all2.jpg",
-];
 
 const Sala = ({ onClose }: SalaProps) => {
   return (
