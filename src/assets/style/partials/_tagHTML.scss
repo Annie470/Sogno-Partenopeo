@@ -1,0 +1,141 @@
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+#logo-nav {
+  width: 200px;
+  filter: brightness(0) invert(1);
+}
+
+.navbar-toggler-icon,
+#trip-adv {
+  filter: invert(1);
+}
+.sticky-xs-md {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+
+  @media (min-width: 992px) {
+    position: static;
+  }
+}
+
+.thefork-iframe {
+  width: 100%;
+  border: none;
+  overflow: hidden;
+  min-height: 280px; /* default (mobile / sm) */
+}
+
+@media (min-width: 768px) {
+  /* md e oltre */
+  .thefork-iframe {
+    min-height: 420px;
+  }
+}
+.carousel {
+  .carousel-item {
+    img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      object-position: bottom;
+    }
+  }
+}
+
+.sala-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.sala-content {
+  position: relative;
+  background-color: $tertiary;
+  padding: 0.5rem;
+  border-radius: 10px;
+  max-width: 800px;
+  width: 90%;
+  overflow: hidden;
+}
+
+.sala-close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 1.5rem;
+  line-height: 1;
+  border: none;
+  z-index: 10;
+  background: $tertiary !important;
+  color: #000 !important;
+}
+
+.btn-outline-tertiary {
+  color: $primary !important;
+  border: 1px solid $tertiary !important;
+  background-color: transparent !important;
+  &:hover {
+    background-color: $tertiary !important;
+    color: black !important;
+  }
+}
+.logo-spin {
+  width: 15% !important;
+}
+
+//MENU
+#menu-carousel {
+  overflow: hidden;
+
+  .carousel,
+  .carousel-inner {
+    width: 100vw !important;
+    height: 100vh;
+  }
+
+  .carousel-item img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: right;
+  }
+
+  @media (min-width: 992px) {
+    .carousel-item img {
+      object-fit: contain;
+      object-position: center;
+      background-color: white;
+      border-top: 10px solid $tertiary;
+      border-bottom: 10px solid $tertiary;
+    }
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(1);
+  }
+}
+
+//HOMECONTAINER
+.contTert {
+    border-top: 10px solid $tertiary;
+  border-bottom: 10px solid $tertiary;
+}
+//SIGNATURE
+.sign-cont {
+  width: 100%;
+  box-sizing: border-box;
+  img {
+    width: 50%;
+  }
+}
