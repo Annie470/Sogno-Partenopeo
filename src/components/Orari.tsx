@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Card, ListGroup } from "react-bootstrap";
 import { FaChevronRight } from "react-icons/fa";
-import logo from "../assets/SPLogo.png";
 import Sala from "./Sala";
 
 type OpeningHours = {
@@ -72,7 +71,7 @@ const Orari = () => {
           </Card.Title>
         </Card.Body>
       </Card>
-      <img src={logo} alt="logo" className="spin logo-spin me-3" />
+      <img src="/SPLogo.png" alt="logo" className="spin logo-spin me-3" />
 
       {showSala && <Sala onClose={() => setShowSala(false)} />}
     </>

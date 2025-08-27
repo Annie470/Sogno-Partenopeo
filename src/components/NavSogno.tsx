@@ -2,13 +2,14 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink } from "react-router-dom";
+import logo from "../assets/img/SPEsteso2.png";
+
 
 const NavSogno = () => {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-grad sticky-xs-md ">
       <Container fluid>
-        <img src="src/assets/img/SPEsteso2.png" alt="Logo" id="logo-nav" />
-
+       <img src={logo} alt="Logo" id="logo-nav" />
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           className="border-0"
