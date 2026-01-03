@@ -1,0 +1,40 @@
+
+//NIENTE DECORAZIONI
+.no-underline {
+    text-decoration: none;
+    &:visited {
+    color: black;
+    }
+}
+
+//COLORI  //#13ffc0;
+$primary: #083e4d;
+$tertiary: #b79653;
+$light:#F9FAFA;
+.bg-grad{
+  background: #083E4D;
+background: linear-gradient(180deg, rgba(8, 62, 77, 1) 0%, rgba(48, 47, 47, 1) 100%);
+}
+.tert, strong {
+  color: $tertiary !important;
+}
+
+
+//HOVER LOGO
+.fly{
+   transition: all 0.3s ease-in;
+   &:hover{
+    transform: scale(1.2);
+    color: $tertiary !important;
+    }
+  }
+  a:hover{
+    color:$tertiary !important;
+  }
+.spin{
+   transition: all 0.3s ease-in;
+    animation: youSpinMeRound 4s linear infinite;
+  }
+
+
+
